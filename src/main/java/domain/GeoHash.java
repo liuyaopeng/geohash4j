@@ -61,10 +61,7 @@ public class GeoHash {
     }
 
 
-    public GeoHash calculateHashCode() {
-        return this;
 
-    }
 
     private void calculateHashCode(double lon, double lat, int precision) {
         ArrayBlockingQueue lonQueue = this.lonToQueue(lon, precision);

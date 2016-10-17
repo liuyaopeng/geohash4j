@@ -36,7 +36,6 @@ public class GeoSearch {
 
     public String getSearchKey(double lon, double lat, double distance) {
         GeoHash geoHash = new GeoHash(lon, lat);
-        geoHash.calculateHashCode();
         Map<BigDecimal, Integer> precisionMap = geoHash.PRECISION_MAP;
         int precision = 0;
         Iterator<BigDecimal> keys = precisionMap.keySet().iterator();
@@ -49,9 +48,6 @@ public class GeoSearch {
         }
         String binaryString = geoHash.toBinaryString();
         String searchKey = binaryString.substring(0, precision);
-        if (!binaryString.equals(searchKey)) {
-            searchKey = searchKey + "%";
-        }
         return searchKey;
     }
 
