@@ -51,7 +51,7 @@ public class GeoSearch {
     }
 
 
-    public double GetDistance(double lat1, double lng1, double lat2, double lng2) {
+    public double getDistance(double lat1, double lng1, double lat2, double lng2) {
         double EARTH_RADIUS = 6378.137;
         double radLat1 = rad(lat1);
         double radLat2 = rad(lat2);

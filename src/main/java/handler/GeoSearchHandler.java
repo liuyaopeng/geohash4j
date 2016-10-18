@@ -42,7 +42,7 @@ public abstract class GeoSearchHandler {
         for (Map<String, Object> stringObjectMap : result) {
             Double lonResult = (Double) stringObjectMap.get("lon");
             Double latResult = (Double) stringObjectMap.get("lat");
-            Double disResult = geoSearch.GetDistance(lon, lat, lonResult, latResult);
+            Double disResult = geoSearch.getDistance(lon, lat, lonResult, latResult);
             if (disResult <= distance) {
                 stringObjectMap.put("dis", disResult);
                 resultTore.add(stringObjectMap);
