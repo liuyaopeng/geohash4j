@@ -1,4 +1,4 @@
-package handler;
+package hdandler;
 
 import domain.GeoHash;
 
