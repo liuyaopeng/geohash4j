@@ -1,7 +1,6 @@
 package geotest;
 
-import Handler.GeoSearch;
-import domain.GeoHash;
+import handler.GeoSearch;
 
 /**
  * 　　　　　　　　┏┓　　　┏┓+ +
