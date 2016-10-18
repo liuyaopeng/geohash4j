@@ -1,6 +1,6 @@
 package geotest;
 
-import hdandler.GeoSearch;
+import handler.GeoSearch;
 
 /**
  * 　　　　　　　　┏┓　　　┏┓+ +
