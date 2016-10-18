@@ -29,7 +29,7 @@ import java.util.Map;
  * <p>
  * Created by xiaoyu on 2016/10/17.
  */
-public abstract class GeoSearChHandler {
+public abstract class GeoSearchHandler {
 
     public abstract List<Map<String, Object>> getResult(Map<String,Object> map);
 
